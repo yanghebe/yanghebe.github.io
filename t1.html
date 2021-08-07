@@ -7,8 +7,24 @@
     </head>
     <body>
         <h1>覺得厲害</h1>
+
+        <div id=win>this is my load</div>
+    <spen>再測試</spen>
+    <p>這是教學使用的步驟</p>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
     </body>
 </html>
+
 
 {% comment %} 
 當在設計手機行動版網頁 (mobile web) 或響應式 (RWD, Responsive Web Design) 網頁時，我們需要用 <meta> viewport 來指定瀏覽器怎麼渲染和縮放網頁畫面的寬高。如果沒有設定 meta viewport，移動設備會以典型的桌面設備螢幕寬度渲染頁面，然後對頁面進行縮放以適合移動設備屏幕，這時候畫面看起來就會擠在一起或內容變很小不好閱讀。
@@ -32,6 +48,7 @@ minimum-scale=1 設定畫面最小的縮放比例為 1， maximum-scale=1 設定
 user-scalable 用來設定是否允許使用者改變縮放比例，user-scalable=no 就是不允許縮放 
 {% endcomment %}
 
+
 {% comment %} 
 Viewport 屬性說明
 屬性            說明
@@ -42,3 +59,16 @@ minimum-scale   設定畫面的最小縮放比例
 maximum-scale   設定畫面的最大縮放比例
 user-scalable   設定是否允許使用者改變縮放比例 
 {% endcomment %}
+
+
+{% comment %} 
+width=device-width
+因為目前手機尺寸非常多，因此，我們就只要設定為 width=device-width 就可以自動符合所有不同手機螢幕他們自己的預設最佳解析度。
+
+initial-scale=1
+設定手機螢幕畫面的初始縮放比例為 100%。
+
+user-scalable=no
+有時候網站會有特殊設定，或者業主有指定不允許使用者改變縮放比例，則會將值設為 no。 
+{% endcomment %}
+
