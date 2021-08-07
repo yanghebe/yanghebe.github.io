@@ -9,3 +9,36 @@
         <h1>覺得厲害</h1>
     </body>
 </html>
+
+{% comment %} 
+當在設計手機行動版網頁 (mobile web) 或響應式 (RWD, Responsive Web Design) 網頁時，我們需要用 <meta> viewport 來指定瀏覽器怎麼渲染和縮放網頁畫面的寬高。如果沒有設定 meta viewport，移動設備會以典型的桌面設備螢幕寬度渲染頁面，然後對頁面進行縮放以適合移動設備屏幕，這時候畫面看起來就會擠在一起或內容變很小不好閱讀。
+
+通過設置 viewport (視口)，你可以控制螢幕的寬度和縮放比例。常見的 viewport 設定：
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+其中：
+
+width=device-width 指定瀏覽器頁面的寬度同裝置 (device) 的寬度
+initial-scale=1.0 指定畫面初始縮放比例為 100%，即不放大也不縮小
+如果你想防止使用者用手指做畫面的縮放：
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+或這樣子設定也一樣效果：
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+其中：
+
+minimum-scale=1 設定畫面最小的縮放比例為 1， maximum-scale=1 設定畫面最大的縮放比例為 1，都設為 1 的意思其實就是說不能縮放
+user-scalable 用來設定是否允許使用者改變縮放比例，user-scalable=no 就是不允許縮放 
+{% endcomment %}
+
+{% comment %} 
+Viewport 屬性說明
+屬性            說明
+width           設定畫面寬度
+height          設定畫面高度
+initial-scale   設定畫面的初始縮放比例
+minimum-scale   設定畫面的最小縮放比例
+maximum-scale   設定畫面的最大縮放比例
+user-scalable   設定是否允許使用者改變縮放比例 
+{% endcomment %}
